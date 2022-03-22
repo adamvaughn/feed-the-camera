@@ -1,0 +1,18 @@
+{
+    "blogPosts": [
+      {
+        "id": "0",
+        "author": "PaperBackWriter",
+        "date": "03/01/22",
+        "picID": "placeholder",
+        "tags": ["dessert", "breakfast", "cheesy-bacon"]
+      },
+      {
+        "id": "1",
+        "author": "Ernesto Hemingway",
+        "date": "04/01/22",
+        "picID": "placeholder2",
+        "tags": ["rum", "daiquiri", "catfood"]
+      }
+    ]
+}
