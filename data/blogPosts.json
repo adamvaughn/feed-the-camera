@@ -3,22 +3,24 @@
       {
         "uid": "0",
         "title" : "Today's Highlight",
-        "author": "PaperBackWriter@randomhouse.com",
-        "date": "03/01/22",
-        "time": "07:12",
+        "text": "Notice the oozy cheese on this delight.",
+        "user": "PaperBackWriter",
+        "created": "Thu Mar 24 11:55:11 EDT 2022",
         "location": "My House",
         "picID": "placeholder",
-        "tags": ["dessert", "breakfast", "cheesy-bacon"]
+        "tags": ["dessert", "breakfast", "cheesy-bacon"],
+        "comments": []
       },
       {
         "uid": "1",
         "title": "Second Bottle Today",
-        "author": "Ernesto Hemingway@sunsetvilla.com",
-        "date": "04/01/22",
-        "time": "23:11",
+        "text": "Only the finest rum for Papa",
+        "user": "Ernesto Hemingway",
+        "created": "Thu Mar 24 11:58:11 EDT 2022",
         "location": "El Floridita",
         "picID": "placeholder2",
-        "tags": ["rum", "daiquiri", "catfood"]
+        "tags": ["rum", "daiquiri", "catfood"],
+        "comments": []
       }
     ]
 }
