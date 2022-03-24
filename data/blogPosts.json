@@ -1,16 +1,22 @@
 {
     "blogPosts": [
       {
-        "id": "0",
-        "author": "PaperBackWriter",
+        "uid": "0",
+        "title" : "Today's Highlight",
+        "author": "PaperBackWriter@randomhouse.com",
         "date": "03/01/22",
+        "time": "07:12",
+        "location": "My House",
         "picID": "placeholder",
         "tags": ["dessert", "breakfast", "cheesy-bacon"]
       },
       {
-        "id": "1",
-        "author": "Ernesto Hemingway",
+        "uid": "1",
+        "title": "Second Bottle Today",
+        "author": "Ernesto Hemingway@sunsetvilla.com",
         "date": "04/01/22",
+        "time": "23:11",
+        "location": "El Floridita",
         "picID": "placeholder2",
         "tags": ["rum", "daiquiri", "catfood"]
       }
