@@ -1,6 +1,6 @@
 # feed-the-camera
 
-=======
+
 ## TABLE OF CONTENTS
 * [Introduction](#INTRODUCTION)
 * [Technologies](#TECHNOLOGIES)
@@ -31,4 +31,4 @@ Created by:
  [@loriful](https://github.com/loriful)
  [@robbiemurphy7](https://github.com/robbiemurphy7) 
  [@JulesMcP](https://github.com/JulesMcP)
->>>>>>> feature/JulesMcP
+
