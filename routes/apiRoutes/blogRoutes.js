@@ -1,11 +1,11 @@
 const router = require('express').Router();
 const { filterByQuery } = require('../../lib/blogPosts');
 const { blogPosts } = require('../../data/blogPosts');
-
+const withAuth = require('../../utils/auth');
 
 // TODO:  need more query and post options //
 
-router.get('/blogPosts', (req, res) => {
+router.get('/blogPosts', withAuth,(req, res) => {
     let results = blogPosts;
     if (req.query) {
       results = filterByQuery(req.query, results);
@@ -13,7 +13,7 @@ router.get('/blogPosts', (req, res) => {
     res.json(results);
   });
 
-router.post('/blogPosts', (req, res) => {
+router.post('/blogPosts', withAuth,(req, res) => {
     // set id based on what the next index of the array will be
     req.body.id = blogPosts.length.toString();
   
@@ -23,6 +23,6 @@ router.post('/blogPosts', (req, res) => {
       const newPost = createNewPost(req.body, blogPosts);
       res.json(newPost);
     }
-  });
+});
 
 module.exports = router;
