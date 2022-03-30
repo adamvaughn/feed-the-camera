@@ -1,4 +1,5 @@
 const express = require('express');
+const sequelize = require('./config/connection');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -13,6 +14,13 @@ app.use(express.static('public'));
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
-app.listen(PORT, () => {
-  console.log(`API server now on port ${PORT}!`);
+// turn on connection to db and server
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log('Now listening'));
 });
+
+// replaced the code below with code above (referencing 13.1.6)
+
+//app.listen(PORT, () => {
+  //console.log(`API server now on port ${PORT}!`);
+//});
