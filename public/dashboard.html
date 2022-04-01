@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feed Your Camera : </title>
+    <title>Feed Your Camera</title>
+
+    <!-- firebase auth UI CDN -->
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
 
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/editor.css">
-    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/dashboard.css">
 
 </head>
 <body>
+
+    <!-- login -->
+    <div class="login">
+        <div id="loginUI"></div>
+    </div>
 
     <nav class="navbar">
         <img src="img/logo.png" class="logo" alt="">
@@ -20,18 +27,9 @@
             <li class="link-item"><a href="/editor" class="link">editor</a></li>
         </ul>
     </nav>
-    <div class="banner"></div>
 
-    <div class="blog">
-        <h1 class="title"></h1>
-        <p class="published"><span>published at - </span></p>
-        <a href="" class="btn" id="edit-blog-btn">edit blog</a>
-        <div class="article">
-            
-        </div>
-    </div>
-
-    <h1 class="sub-heading">Read more</h1>
+    <!-- dashboard -->
+    <h1 class="heading">your blogs</h1>
 
     <!-- blog section -->
     <section class="blogs-section">
@@ -40,18 +38,19 @@
             <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
             <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
             <a href="/" class="btn dark">read</a>
+            <a href="/" class="btn grey">edit</a>
+            <a href="/" class="btn danger">delete</a>
         </div> -->
     </section>
-
+    
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
-
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+
     <script src="js/firebase.js"></script>
-    <script src="js/home.js"></script>
-    <script src="js/blog.js"></script>
-    
+    <script src="js/dashboard.js"></script>
     <script src="js/nav.js"></script>
-    
+
 </body>
 </html>
